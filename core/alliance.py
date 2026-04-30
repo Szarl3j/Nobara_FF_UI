@@ -1,21 +1,35 @@
 import psutil
+import datetime
+
 
 class AllianceManager:
-    def get_system_stats(self):
-        """Lista C: Hardware jako członkowie party"""
-        return [
-            {"name": "CPU_CORE", "hp": psutil.cpu_percent(), "status": "online"},
-            {"name": "RAM_MEM", "hp": psutil.virtual_memory().percent, "status": "online"},
-            {"name": "GPU_CORE", "hp": 45, "status": "online"}, # Można rozbudować o pynvml
-            # ... do 8 slotów
+    def __init__(self):
+        self.start_time = datetime.datetime.now()
+
+    def get_hardware_stats(self):
+        """Alliance C: Twoje podzespoły jako drużyna rajdowa"""
+        # Pobieramy dane systemowe
+        cpu = psutil.cpu_percent()
+        ram = psutil.virtual_memory().percent
+        disk = psutil.disk_usage('/').percent
+        net = psutil.net_io_counters()
+
+        # Tworzymy listę 'członków party'
+        party_c = [
+            {"name": "CPU_CORE", "hp": cpu, "status": "online", "job": "DRG"},
+            {"name": "RAM_MEM", "hp": ram, "status": "online", "job": "AST"},
+            {"name": "DISK_ROOT", "hp": disk, "status": "online", "job": "WAR"},
+            {"name": "NET_DOWN", "hp": min(100, net.bytes_recv // 1000000), "status": "online", "job": "BRD"},
         ]
 
-    def get_music_info(self):
-        """Lista B: Orchestrion"""
-        # Tu docelowo integracja z playerctl
-        return {"title": "Answers", "artist": "Susan Calloway", "progress": 40}
+        # Wypełniamy resztę do 8, żeby UI się nie rozjechało
+        while len(party_c) < 8:
+            party_c.append({"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"})
 
-    def get_discord_data(self):
-        """Lista A: Social"""
-        # Tu docelowo pypresence
-        return [{"name": "Friend1", "status": "dnd"}, {"name": "Friend2", "status": "online"}]
+        return party_c
+
+    def get_eorzea_time(self):
+        """Symulacja czasu Eorzei (ET) - uproszczona"""
+        now = datetime.datetime.now()
+        # W FFXIV czas płynie ok. 20.5x szybciej. Tu robimy prosty zegar ET.
+        return now.strftime("%H:%M")
