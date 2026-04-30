@@ -1,0 +1,18 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["custom/eorzea_clock", "custom/quest_log"],
+    "modules-right": ["custom/limit_break", "custom/alliance_a"],
+
+    "custom/eorzea_clock": {
+        "exec": "jq -r '.et' data.json",
+        "interval": 1,
+        "format": " ET {}"
+    },
+
+    "custom/limit_break": {
+        "exec": "python3 scripts/calculate_lb.py", // Lub czytanie z data.json
+        "return-type": "json",
+        "format": "LB {}"
+    }
+}

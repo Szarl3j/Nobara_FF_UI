@@ -1,0 +1,32 @@
+{
+    "et": "14:45",
+    "quest": "[MSQ] The Ultimate Weapon",
+    "alliance_a": [
+        {"name": "Warrior OfLight", "hp": 100, "status": "online", "job": "PLD"},
+        {"name": "Friend Name", "hp": 100, "status": "dnd", "job": "WHM"},
+        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
+        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
+        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
+        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
+        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
+        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"}
+    ],
+    "alliance_b": {
+        "current_track": "Answers - Susan Calloway",
+        "progress": 45,
+        "is_playing": true,
+        "queue": ["Dragonsong", "Flow", "Close in the Distance"]
+    },
+    "alliance_c": [
+        {"name": "CPU_NODE", "load": 15, "temp": 45},
+        {"name": "GPU_NODE", "load": 30, "temp": 55},
+        {"name": "RAM_NODE", "load": 60, "temp": 0},
+        {"name": "DISK_NODE", "load": 80, "temp": 0},
+        {"name": "NET_DOWN", "load": 12, "temp": 0},
+        {"name": "NET_UP", "load": 5, "temp": 0},
+        {"name": "SWAP_NODE", "load": 2, "temp": 0},
+        {"name": "VOL_NODE", "load": 50, "temp": 0}
+    ],
+    "gil": "1,240,500",
+    "lb_level": 3
+}

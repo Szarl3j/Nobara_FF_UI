@@ -1,0 +1,60 @@
+/* GŁÓWNE OKNO */
+* {
+    font-family: "Optimus Princeps", "JetBrains Mono Nerd Font", sans-serif;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* QUEST LOG (Górny lewy róg) */
+#custom-quest_log {
+    background: linear-gradient(180deg, rgba(40, 40, 40, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
+    border: 2px solid #c2a661; /* Złota ramka */
+    border-radius: 0 15px 0 15px;
+    padding: 5px 15px;
+    color: #f0e68c;
+    margin: 5px;
+}
+
+/* ALLIANCE PARTY LISTS (Styl dla 24 pasków) */
+.party-member {
+    background: rgba(15, 20, 30, 0.85); /* Ciemny granat UI */
+    border: 1px solid rgba(194, 166, 97, 0.3);
+    margin-bottom: 2px;
+    padding: 2px 8px;
+}
+
+/* Pasek HP (Gradient typowy dla FFXIV) */
+#custom-hp-bar {
+    background: linear-gradient(90deg, #2a5a3a 0%, #3fb361 50%, #2a5a3a 100%);
+    border: 1px solid #1a3a2a;
+    border-radius: 2px;
+}
+
+/* STATUSY (Party A) */
+.status-dnd { border-left: 4px solid #ff4b4b; }
+.status-online { border-left: 4px solid #3fb361; }
+.status-afk { border-left: 4px solid #f1c40f; }
+
+/* LIMIT BREAK (Animacja pulsowania przy LB3) */
+#custom-limitbreak.lb3 {
+    background: linear-gradient(90deg, #ff4500, #ffcc00, #ff4500);
+    background-size: 200% 200%;
+    animation: lb_pulse 0.5s infinite alternate;
+    font-weight: bold;
+    color: white;
+}
+
+@keyframes lb_pulse {
+    from { box-shadow: 0 0 5px #ff4500; }
+    to { box-shadow: 0 0 20px #ffcc00; }
+}
+
+/* GIL (Dysk twardy) */
+#disk {
+    color: #ffd700;
+    font-weight: bold;
+}
