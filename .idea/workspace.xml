@@ -29,6 +29,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Szarl3j/Nobara_FF_UI",
+    "accountId": "c9469b1b-6b2d-4846-b369-b3f94c12848a"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
@@ -64,6 +70,15 @@
       <option name="presentableId" value="Default" />
       <updated>1777537797763</updated>
     </task>
+    <task id="LOCAL-00001" summary="Stworzenie podstawowej struktury programu:&#10;Podstawowe folder i podsatwowe pliki json i py">
+      <option name="closed" value="true" />
+      <created>1777539496740</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1777539496740</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
