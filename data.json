@@ -1,32 +1,158 @@
 {
-    "et": "14:45",
-    "quest": "[MSQ] The Ultimate Weapon",
-    "alliance_a": [
-        {"name": "Warrior OfLight", "hp": 100, "status": "online", "job": "PLD"},
-        {"name": "Friend Name", "hp": 100, "status": "dnd", "job": "WHM"},
-        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
-        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
-        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
-        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
-        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"},
-        {"name": "Empty Slot", "hp": 0, "status": "offline", "job": "N/A"}
+    "et": "15:48",
+    "quest": "\ue06f No Active Quests",
+    "gil": "777 777",
+    "party_a": [
+        {
+            "name": "Ty (Warrior)",
+            "hp": 100,
+            "status": "online",
+            "job": "WAR"
+        },
+        {
+            "name": "Marek (Friend)",
+            "hp": 100,
+            "status": "online",
+            "job": "BLM"
+        },
+        {
+            "name": "Ania (Friend)",
+            "hp": 100,
+            "status": "online",
+            "job": "WHM"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        }
     ],
-    "alliance_b": {
-        "current_track": "Answers - Susan Calloway",
-        "progress": 45,
-        "is_playing": true,
-        "queue": ["Dragonsong", "Flow", "Close in the Distance"]
-    },
+    "alliance_b": [
+        {
+            "name": "Susan Calloway - Answers",
+            "hp": 65,
+            "status": "playing",
+            "job": "BRD"
+        },
+        {
+            "name": "System Sounds",
+            "hp": 100,
+            "status": "online",
+            "job": "PLD"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        }
+    ],
     "alliance_c": [
-        {"name": "CPU_NODE", "load": 15, "temp": 45},
-        {"name": "GPU_NODE", "load": 30, "temp": 55},
-        {"name": "RAM_NODE", "load": 60, "temp": 0},
-        {"name": "DISK_NODE", "load": 80, "temp": 0},
-        {"name": "NET_DOWN", "load": 12, "temp": 0},
-        {"name": "NET_UP", "load": 5, "temp": 0},
-        {"name": "SWAP_NODE", "load": 2, "temp": 0},
-        {"name": "VOL_NODE", "load": 50, "temp": 0}
+        {
+            "name": "CPU_CORE",
+            "hp": 9.9,
+            "status": "online",
+            "job": "DRK"
+        },
+        {
+            "name": "RAM_MEM",
+            "hp": 88.8,
+            "status": "online",
+            "job": "ALC"
+        },
+        {
+            "name": "GPU_CORE",
+            "hp": 45,
+            "status": "online",
+            "job": "MCH"
+        },
+        {
+            "name": "DISK_C",
+            "hp": 59.7,
+            "status": "online",
+            "job": "MIN"
+        },
+        {
+            "name": "NETWORK",
+            "hp": 12,
+            "status": "online",
+            "job": "NIN"
+        },
+        {
+            "name": "FANS_SPEED",
+            "hp": 30,
+            "status": "online",
+            "job": "VPR"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        },
+        {
+            "name": "Empty Slot",
+            "hp": 0,
+            "status": "offline",
+            "job": "NONE"
+        }
     ],
-    "gil": "1,240,500",
-    "lb_level": 3
+    "last_messenger": "Searching...",
+    "raid_status": "In Duty",
+    "last_update": "10:06:06"
 }
