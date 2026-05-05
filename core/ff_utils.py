@@ -1,75 +1,37 @@
 import time
 import math
-import datetime
+
 
 def get_eorzea_time():
     """
-    Przelicza czas systemowy (Unix) na czas Eorzea.
-    Eorzea Time płynie dokładnie 20.571428571428573 razy szybciej niż czas ziemski.
+    Oblicza aktualny czas Eorzea (ET) na podstawie czasu rzeczywistego.
+    1 godzina ET = 175 sekund rzeczywistych.
     """
-    EORZEA_CONSTANT = 20.571428571428573
-    now = time.time()
-    eorzea_seconds = now * EORZEA_CONSTANT
+    # Stała przeliczeniowa: 1440 minut Eorzei to 70 minut rzeczywistych
+    EORZEA_MULTIPLIER = 1440 / 70
 
-    v_min = int((eorzea_seconds / 60) % 60)
-    v_hr = int((eorzea_seconds / 3600) % 24)
+    # Pobieramy czas Unix i przeliczamy na minuty Eorzei
+    epoch_time = time.time()
+    eorzea_total_minutes = epoch_time * EORZEA_MULTIPLIER / 60
 
-    return f"{v_hr:02d}:{v_min:02d}"
+    eorzea_minutes = int(eorzea_total_minutes % 60)
+    eorzea_hours = int((eorzea_total_minutes / 60) % 24)
 
-def format_gil(value):
-    """
-    Formatuje liczbę na format waluty Gil (np. 1 234 567).
-    Używane do wyświetlania stanu posiadania lub wolnego miejsca jako Gil.
-    """
+    return f"{eorzea_hours:02d}:{eorzea_minutes:02d}"
+
+
+def format_gil_value(value):
+    """Formatuje surową liczbę lub string na format z przerwami (np. 31 645)."""
     try:
-        return "{:,.0f}".format(float(value)).replace(",", " ")
+        # Usuwamy istniejące spacje i formatujemy na nowo
+        clean_val = str(value).replace(" ", "").replace(",", "")
+        return "{:,}".format(int(clean_val)).replace(",", " ")
     except (ValueError, TypeError):
-        return "0"
+        return value
 
-def get_hp_color(percentage):
-    """
-    Zwraca kolor Hex w zależności od procentu (barwy FF XIV).
-    """
-    if percentage > 75:
-        return "#3fb361"  # Zielony
-    elif percentage > 25:
-        return "#f1c40f"  # Żółty
-    else:
-        return "#ff4b4b"  # Czerwony
 
-def format_to_waybar(text, alt="", class_name="", percentage=-1):
-    """
-    Formatuj dane do standardu JSON dla modułu 'custom' w Waybar.
-    """
-    res = {
-        "text": str(text),
-        "alt": str(alt),
-        "class": str(class_name)
-    }
-    if percentage >= 0:
-        res["percentage"] = int(percentage)
-    return res
-
-def get_job_icon(job_name):
-    """
-    Zwraca odpowiedni symbol fontu dla profesji lub podzespołu.
-    """
-    icons = {
-        "tank": "",
-        "healer": "",
-        "dps": "",
-        "cpu": "",
-        "gpu": "󰢮",
-        "ram": ""
-    }
-    return icons.get(job_name.lower(), "")
-
-def calculate_progress_bar(current, total, width=10):
-    """
-    Tworzy tekstowy pasek postępu (np. ▰▰▰▱▱).
-    """
-    if total <= 0: return "▱" * width
-    percent = (current / total)
-    filled = int(width * min(max(percent, 0), 1))
-    bar = "▰" * filled + "▱" * (width - filled)
-    return bar
+def get_load_color(value):
+    """Zwraca kolor w zależności od obciążenia (HP w Twoim przypadku)."""
+    if value > 70: return "#3fb361"  # Zielony (Bezpiecznie)
+    if value > 30: return "#c2a661"  # Żółty (Średnio)
+    return "#ff3300"  # Czerwony (Krytycznie)
