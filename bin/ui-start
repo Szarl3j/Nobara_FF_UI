@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# kill duplicates
+pkill waybar 2>/dev/null
+pkill mpvpaper 2>/dev/null
+
+# start wallpaper
+wallpaper &
+
+# start UI sound
+play-sound startup &
+
+# start waybar
+waybar &

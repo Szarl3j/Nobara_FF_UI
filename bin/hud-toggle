@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if pgrep -f "ui_overlay.py" > /dev/null
+then
+    pkill -f ui_overlay.py
+else
+    python3 $HOME/Nobara_FF_UI/core/ui_overlay.py &
+fi

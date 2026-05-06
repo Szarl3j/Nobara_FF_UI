@@ -4,7 +4,91 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
+    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="Nowe funkcje">
+      <change afterPath="$PROJECT_DIR$/bin/hud-toggle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/launch-browser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/launch-discord" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/launch-steam" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/play-sound" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/restart-waybar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/ui-start" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/wallpaper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/wallpaper-random" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/alliance_widget.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/discord_presence.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/media_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/sound_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/wallpaper_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/widgets/cast_bar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/widgets/hp_bar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/widgets/mana_bar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/widgets/minimap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/widgets/party_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/animations.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/autostart.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/hyprland.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/keybinds.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/monitors.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/theme.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hypr/windows.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_overlay.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/alliance/party_sync.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/discord/discord_groups.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/discord/discord_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/discord/voice_activity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/jobs/job_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/jobs/jobs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/ffxiv_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/job_icon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/media_listener.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/system_stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/update_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/wallpaper_indexer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waybar/modules/alliance.jsonc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waybar/modules/dark_fantasy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waybar/modules/discord.jsonc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/waybar/themes/nyxara.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/30sec AI/Sisters_of_Neon.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/Sisters_of_Neon.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/30sec AI/Taste_of_Dirt.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/Taste_of_Dirt.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/30sec AI/Yokai_s_Embrace.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/videos/Yokai_s_Embrace.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/LogIN/login.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/LogIN/login.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/455435t465.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/455435t465.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Animowana_tapeta_z_Miqo_te.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Animowana_tapeta_z_Miqo_te.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Combat_Video_Generation.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Combat_Video_Generation.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/EPIK 1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/EPIK 1.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epicka_Animowana_Tapeta_Z_Muzyką.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epicka_Animowana_Tapeta_Z_Muzyką.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 2.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 3.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 3.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 4.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 4.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 5.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 5.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 6.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 6.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 7.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 7.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Epik 8.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 8.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Generating_Video_From_Picture.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Generating_Video_From_Picture.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/Twoja_Wideo_Jest_Gotowe.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Twoja_Wideo_Jest_Gotowe.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Animowane tapet/Na pulpit/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/message.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sounds/Duty Pop.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sounds/ringtones/Duty Pop.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sounds/ffxiv full party.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sounds/ringtones/ffxiv full party.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sounds/ffxiv-light-party.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sounds/ringtones/ffxiv-light-party.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sounds/ffxiv-message-2.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sounds/ringtones/ffxiv-message-2.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sounds/ffxiv-quest-complete-made-with-Voicemod.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sounds/ringtones/ffxiv-quest-complete-made-with-Voicemod.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/animations.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/animations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/audio_visualizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/audio_visualizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ff_alliance.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/ff_alliance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ff_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/ff_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gil_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/gil_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/notifications.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/notifications.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/set_icons.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/set_icons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/ui_overlay.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/ui_overlay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waybar/config.jsonc" beforeDir="false" afterPath="$PROJECT_DIR$/waybar/config.jsonc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/waybar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/waybar/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,19 +103,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Szarl3j"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Szarl3j&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Szarl3j/Nobara_FF_UI.git",
-    "accountId": "e123a163-b5cf-4110-9ede-b31a4e379c7e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Szarl3j/Nobara_FF_UI.git&quot;,
+    &quot;accountId&quot;: &quot;e123a163-b5cf-4110-9ede-b31a4e379c7e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -43,16 +128,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.engine.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.engine.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hrabi\PycharmProjects\Nobara_FF_UI\modules\jobs" />
+      <recent name="C:\Users\hrabi\PycharmProjects\Nobara_FF_UI\modules\discord" />
+      <recent name="C:\Users\hrabi\PycharmProjects\Nobara_FF_UI\modules\alliance" />
+      <recent name="C:\Users\hrabi\PycharmProjects\Nobara_FF_UI\assets\sounds\ringtones" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="engine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Nobara_FF_UI" />
@@ -137,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777796862000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Nowe funkcje">
+      <option name="closed" value="true" />
+      <created>1778044897809</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1778044897809</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Nowe funkcje">
+      <option name="closed" value="true" />
+      <created>1778044953488</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1778044953488</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,6 +254,7 @@
     <MESSAGE value="assets wszystkie potrzebne pliki" />
     <MESSAGE value="modyfikacja engine&#10;dodanie odtwarzanie powiadomień&#10;grupy A,B i C&#10;ikonka gil na dyskach" />
     <MESSAGE value="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
+    <MESSAGE value="Nowe funkcje" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nowe funkcje" />
   </component>
 </project>

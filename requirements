@@ -1,0 +1,5 @@
+sudo dnf install hyprland waybar rofi dunst kitty dolphin mpv jq
+sudo dnf install playerctl
+pip install psutil
+sudo dnf install libnotify playerctl
+pip install PySide6

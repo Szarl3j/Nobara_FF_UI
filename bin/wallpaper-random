@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIR="$HOME/Nobara_FF_UI/assets/wallpapers"
+FILE=$(find "$DIR" -type f -name "*.mp4" | shuf -n 1)
+
+[ -z "$FILE" ] && exit 1
+
+pkill mpvpaper 2>/dev/null
+
+mpvpaper -o "no-audio loop hwdec=auto" "*" "$FILE"

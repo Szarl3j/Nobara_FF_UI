@@ -1,18 +1,80 @@
 {
-    "layer": "top",
-    "position": "top",
-    "modules-left": ["custom/eorzea_clock", "custom/quest_log"],
-    "modules-right": ["custom/limit_break", "custom/alliance_a"],
+  "layer": "top",
+  "position": "top",
+  "height": 42,
 
-    "custom/eorzea_clock": {
-        "exec": "jq -r '.et' data.json",
-        "interval": 1,
-        "format": " ET {}"
-    },
+  "modules-left": [
+    "custom/launcher",
+    "custom/discord",
+    "custom/wallpaper",
+    "custom/sound"
+  ],
 
-    "custom/limit_break": {
-        "exec": "python3 scripts/calculate_lb.py", // Lub czytanie z data.json
-        "return-type": "json",
-        "format": "LB {}"
-    }
+  "modules-center": [
+    "clock"
+  ],
+
+  "modules-right": [
+    "cpu",
+    "memory",
+    "temperature",
+    "custom/gil",
+    "custom/job",
+    "custom/alliance"
+  ],
+
+  "custom/launcher": {
+    "format": "🜂",
+    "tooltip": "Launcher",
+    "on-click": "rofi -show drun"
+  },
+
+  "custom/discord": {
+    "format": "󰙯",
+    "tooltip": "Discord",
+    "on-click": "launch-discord"
+  },
+
+  "custom/wallpaper": {
+    "format": "🎞",
+    "tooltip": "Random Wallpaper",
+    "on-click": "wallpaper-random"
+  },
+
+  "custom/sound": {
+    "format": "🔔",
+    "tooltip": "UI Sound",
+    "on-click": "play-sound click"
+  },
+
+  "custom/gil": {
+    "exec": "cat ~/Nobara_FF_UI/data.json | jq -r '.gil'",
+    "interval": 2
+  },
+
+  "custom/job": {
+    "exec": "python3 ~/Nobara_FF_UI/scripts/job_icon.py",
+    "interval": 2
+  },
+
+  "custom/alliance": {
+    "exec": "python3 ~/Nobara_FF_UI/modules/alliance/alliance_status.py",
+    "interval": 5
+  },
+
+  "clock": {
+    "format": "{:%H:%M  %d.%m.%Y}"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%"
+  },
+
+  "memory": {
+    "format": "RAM {}%"
+  },
+
+  "temperature": {
+    "format": "{temperatureC}°C"
+  }
 }

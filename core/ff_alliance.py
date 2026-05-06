@@ -110,4 +110,4 @@ try:
 except ImportError:
     # Jeśli PySide6 nie ma, te klasy po prostu nie zostaną zdefiniowane,
     # co pozwala engine.py działać bez błędów.
-    pass
+    passsound_manager.py

@@ -1,0 +1,26 @@
+{
+  "alliance_a": {
+    "name": "Alliance A",
+    "members": [
+      "Nyxara",
+      "Remi",
+      "Kitty",
+      "Jargluk"
+    ]
+  },
+
+  "alliance_b": {
+    "name": "Alliance B",
+    "members": [
+      "Nasha",
+      "Elyr",
+      "Shaddan",
+      "Naroj"
+    ]
+  },
+
+  "alliance_c": {
+    "name": "Alliance C",
+    "members": []
+  }
+}

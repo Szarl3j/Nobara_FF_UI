@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "token_env": "NOBARA_FF_DISCORD_TOKEN",
+  "command_prefix": "!",
+  "watch_channels": [],
+  "notify_on_mentions": true,
+  "notify_sound": "notification"
+}

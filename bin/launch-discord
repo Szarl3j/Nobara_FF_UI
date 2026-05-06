@@ -1,0 +1,4 @@
+#!/bin/bash
+
+play-sound click &
+discord &
