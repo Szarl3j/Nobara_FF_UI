@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="modyfikacja engine&#10;dodanie odtwarzanie powiadomień&#10;grupy A,B i C&#10;ikonka gil na dyskach">
-      <change afterPath="$PROJECT_DIR$/to_do" afterDir="false" />
-    </list>
+    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,13 +129,22 @@
       <option name="project" value="LOCAL" />
       <updated>1777796158580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11">
+      <option name="closed" value="true" />
+      <created>1777796862000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777796862000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Stworzenie podstawowej struktury programu:&#10;Podstawowe folder i podsatwowe pliki json i py" />
     <MESSAGE value="assets wszystkie potrzebne pliki" />
     <MESSAGE value="modyfikacja engine&#10;dodanie odtwarzanie powiadomień&#10;grupy A,B i C&#10;ikonka gil na dyskach" />
-    <option name="LAST_COMMIT_MESSAGE" value="modyfikacja engine&#10;dodanie odtwarzanie powiadomień&#10;grupy A,B i C&#10;ikonka gil na dyskach" />
+    <MESSAGE value="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
   </component>
 </project>
