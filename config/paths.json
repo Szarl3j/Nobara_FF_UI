@@ -1,0 +1,10 @@
+{
+  "assets": "assets",
+  "icons": "assets/icons",
+  "sounds": "assets/sounds",
+  "ringtones": "assets/sounds/ringtones",
+  "videos": "assets/videos",
+  "wallpapers": "assets/wallpapers",
+  "state": "state",
+  "logs": "logs"
+}
