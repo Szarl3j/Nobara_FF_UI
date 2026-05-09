@@ -1,2 +1,2 @@
 # Nobara_FF_UI
-Skrypt Python zmieniający Interfejs Hyperland na Linux Nobara w UI z gry Final Fantasy XIV
+My own script which change basic Hyperland UI on FF XIV like UI
