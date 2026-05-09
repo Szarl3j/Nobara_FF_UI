@@ -4,109 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="zmiana struktury i dostosowywanie pod Linuxa">
-      <change afterPath="$PROJECT_DIR$/config/app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/discord_listener.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/hotbar.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/thresholds.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/icons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/paths.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/sound.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/system_monitor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_a_discord/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_a_discord/activity_store.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_a_discord/notification_listener.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_a_discord/waybar_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_b_system/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_b_system/metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_b_system/waybar_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_c_apps/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_c_apps/running_apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/alliance/alliance_c_apps/waybar_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/jobs/job_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/media/now_playing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/media/waybar_output.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state/apps_status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state/discord_activity.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state/system_status.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/state/ui_state.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/launcher/skillbar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/launcher/start_menu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/login_screen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/main_hud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/widgets/apps_panel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/widgets/base_panel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/widgets/discord_panel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/widgets/system_panel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waybar/modules/ media.jsonc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waybar/modules/alliance_b.jsonc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waybar/modules/alliance_c.jsonc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/waybar/modules/launcher.jsonc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/LogIN/login.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/Login/login.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/455435t465.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/455435t465.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Animowana_tapeta_z_Miqo_te.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Animowana_tapeta_z_Miqo_te.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Combat_Video_Generation.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Combat_Video_Generation.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/EPIK 1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/EPIK 1.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epicka_Animowana_Tapeta_Z_Muzyką.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epicka_Animowana_Tapeta_Z_Muzyką.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 2.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 3.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 3.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 4.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 4.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 5.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 5.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 6.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 6.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 7.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 7.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Epik 8.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Epik 8.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Generating_Video_From_Picture.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Generating_Video_From_Picture.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/Twoja_Wideo_Jest_Gotowe.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/Twoja_Wideo_Jest_Gotowe.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpapers/Na pulpit/message.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wallpapers/On_Desktop/message.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/hud-toggle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/hud-toggle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/play-sound" beforeDir="false" afterPath="$PROJECT_DIR$/bin/play-sound" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/restart-waybar" beforeDir="false" afterPath="$PROJECT_DIR$/bin/restart-waybar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/ui-start" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ui-start" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/wallpaper" beforeDir="false" afterPath="$PROJECT_DIR$/bin/wallpaper" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/wallpaper-random" beforeDir="false" afterPath="$PROJECT_DIR$/bin/wallpaper-random" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/alliance_widget.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/animations.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/audio_visualizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/audio_visualizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/clock_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/clock_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/discord_presence.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/engine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/ff_alliance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/ff_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gil_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/gil_widget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/limit_break.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/limit_break.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/media_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/notifications.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/quest_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/quest_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/set_icons.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/sound_manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/ui_overlay.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/wallpaper_manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/widgets/cast_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/cast_bar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/widgets/hp_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/hp_bar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/widgets/mana_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/mana_bar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/widgets/minimap.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/minimap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/widgets/party_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/party_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hypr/theme.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/alliance/alliance.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/alliance/alliance_overlay.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/alliance/alliance_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/alliance/party_sync.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/discord/discord_bot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/discord/discord_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/discord/discord_groups.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/discord/discord_notifications.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/discord/discord_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/discord/voice_activity.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/waybar/config.jsonc" beforeDir="false" afterPath="$PROJECT_DIR$/waybar/config.jsonc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waybar/modules/alliance.jsonc" beforeDir="false" afterPath="$PROJECT_DIR$/waybar/modules/alliance_a.jsonc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waybar/modules/dark_fantasy.css" beforeDir="false" afterPath="$PROJECT_DIR$/waybar/themes/dark_fantasy.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waybar/modules/discord.jsonc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/waybar/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/waybar/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -321,7 +219,31 @@
       <option name="project" value="LOCAL" />
       <updated>1778051870824</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future">
+      <option name="closed" value="true" />
+      <created>1778331100824</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1778331100824</updated>
+    </task>
+    <task id="LOCAL-00010" summary="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future">
+      <option name="closed" value="true" />
+      <created>1778331122194</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1778331122194</updated>
+    </task>
+    <task id="LOCAL-00011" summary="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future">
+      <option name="closed" value="true" />
+      <created>1778331819499</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1778331819499</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -331,6 +253,7 @@
     <MESSAGE value="wymagane pliki/ programy na nobarę&#10;Obecnie pracuję na windows 11" />
     <MESSAGE value="Nowe funkcje" />
     <MESSAGE value="zmiana struktury i dostosowywanie pod Linuxa" />
-    <option name="LAST_COMMIT_MESSAGE" value="zmiana struktury i dostosowywanie pod Linuxa" />
+    <MESSAGE value="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future" />
+    <option name="LAST_COMMIT_MESSAGE" value="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future" />
   </component>
 </project>
