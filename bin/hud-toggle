@@ -1,8 +1,10 @@
 #!/bin/bash
 
-if pgrep -f "ui_overlay.py" > /dev/null
+PROJECT_DIR="$HOME/Nobara_FF_UI"
+
+if pgrep -f "ui/main_hud.py" > /dev/null
 then
-    pkill -f ui_overlay.py
+    pkill -f "ui/main_hud.py"
 else
-    python3 $HOME/Nobara_FF_UI/core/ui_overlay.py &
+    python3 "$PROJECT_DIR/ui/main_hud.py" &
 fi

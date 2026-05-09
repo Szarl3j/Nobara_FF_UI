@@ -1,6 +1,8 @@
 #!/bin/bash
 
-DIR="$HOME/Nobara_FF_UI/assets/wallpapers"
+PROJECT_DIR="$HOME/Nobara_FF_UI"
+DIR="$PROJECT_DIR/assets/wallpapers/On_Desktop"
+
 FILE=$(find "$DIR" -type f -name "*.mp4" | head -n 1)
 
 [ -z "$FILE" ] && exit 1

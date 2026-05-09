@@ -1,8 +1,19 @@
 #!/bin/bash
 
-DIR="$HOME/Nobara_FF_UI/assets/sounds/ringtones"
-FILE="$DIR/$1.mp3"
+PROJECT_DIR="$HOME/Nobara_FF_UI"
+SOUND_NAME="$*"
 
-[ -f "$FILE" ] || exit 1
+RINGTONE="$PROJECT_DIR/assets/sounds/ringtones/$SOUND_NAME.mp3"
+SOUND="$PROJECT_DIR/assets/sounds/$SOUND_NAME.mp3"
 
-mpv --no-video --really-quiet "$FILE" &
+if [ -f "$RINGTONE" ]; then
+    mpv --no-video --really-quiet "$RINGTONE" &
+    exit 0
+fi
+
+if [ -f "$SOUND" ]; then
+    mpv --no-video --really-quiet "$SOUND" &
+    exit 0
+fi
+
+exit 1

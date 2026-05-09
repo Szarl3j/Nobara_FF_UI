@@ -1,0 +1,33 @@
+{
+  "app_name": "Nobara FFXIV UI",
+  "theme": "nyxara_dark",
+
+  "hud": {
+    "enabled": true,
+    "x": 80,
+    "y": 80,
+    "always_on_top": true,
+    "transparent": true,
+    "refresh_ms": 2000
+  },
+
+  "waybar": {
+    "enabled": true,
+    "position": "top",
+    "height": 42
+  },
+
+  "wallpaper": {
+    "enabled": true,
+    "mode": "random",
+    "directory": "assets/wallpapers/On_Desktop"
+  },
+
+  "sounds": {
+    "enabled": true,
+    "startup": "Duty Pop",
+    "click": "Duty Pop",
+    "notification": "ffxiv-message-2",
+    "warning": "ffxiv-message-2"
+  }
+}

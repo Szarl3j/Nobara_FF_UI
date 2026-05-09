@@ -1,0 +1,19 @@
+{
+  "columns": 6,
+  "sound_on_click": "Duty Pop",
+
+  "slots": [
+    { "name": "Steam", "command": "steam", "icon": "Warrior.png" },
+    { "name": "Discord", "command": "launch-discord", "icon": "Bard.png" },
+    { "name": "Firefox", "command": "launch-browser", "icon": "Pictomancer.png" },
+    { "name": "Terminal", "command": "kitty", "icon": "BlackMage.png" },
+    { "name": "Files", "command": "dolphin", "icon": "Carpenter.png" },
+    { "name": "OBS", "command": "obs", "icon": "Machinist.png" },
+    { "name": "Waybar", "command": "restart-waybar", "icon": "Gunbreaker.png" },
+    { "name": "HUD", "command": "hud-toggle", "icon": "Astrologian.png" },
+    { "name": "Wallpaper", "command": "wallpaper-random", "icon": "Summoner.png" },
+    { "name": "Sound", "command": "play-sound \"Duty Pop\"", "icon": "Dancer.png" },
+    { "name": "XIV", "command": "xivlauncher", "icon": "TankRole.png" },
+    { "name": "PyCharm", "command": "pycharm", "icon": "Scholar.png" }
+  ]
+}

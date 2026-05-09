@@ -1,0 +1,24 @@
+{
+  "limit_break": {
+    "enabled": true,
+
+    "gpu_temp_warning": 80,
+    "gpu_temp_critical": 92,
+
+    "gpu_usage_warning": 85,
+    "gpu_usage_critical": 96,
+
+    "cpu_usage_warning": 89,
+    "cpu_usage_critical": 95,
+
+    "ram_usage_warning": 80,
+    "ram_usage_critical": 94,
+
+    "disk_usage_warning": 85,
+    "disk_usage_critical": 95,
+
+    "play_warning_sound": true,
+    "warning_sound": "ffxiv-message-2",
+    "critical_sound": "Duty Pop"
+  }
+}

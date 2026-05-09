@@ -5,7 +5,6 @@
 
   "modules-left": [
     "custom/launcher",
-    "custom/discord",
     "custom/wallpaper",
     "custom/sound"
   ],
@@ -15,12 +14,9 @@
   ],
 
   "modules-right": [
-    "cpu",
-    "memory",
-    "temperature",
-    "custom/gil",
-    "custom/job",
-    "custom/alliance"
+    "custom/alliance_a",
+    "custom/alliance_b",
+    "custom/alliance_c"
   ],
 
   "custom/launcher": {
@@ -29,52 +25,37 @@
     "on-click": "rofi -show drun"
   },
 
-  "custom/discord": {
-    "format": "󰙯",
-    "tooltip": "Discord",
-    "on-click": "launch-discord"
-  },
-
   "custom/wallpaper": {
     "format": "🎞",
-    "tooltip": "Random Wallpaper",
-    "on-click": "wallpaper-random"
+    "tooltip": "Losowa animowana tapeta",
+    "on-click": "$HOME/Nobara_FF_UI/bin/wallpaper-random"
   },
 
   "custom/sound": {
     "format": "🔔",
-    "tooltip": "UI Sound",
-    "on-click": "play-sound click"
+    "tooltip": "Test dźwięku UI",
+    "on-click": "$HOME/Nobara_FF_UI/bin/play-sound \"Duty Pop\""
   },
 
-  "custom/gil": {
-    "exec": "cat ~/Nobara_FF_UI/data.json | jq -r '.gil'",
-    "interval": 2
+  "custom/alliance_a": {
+    "exec": "python3 $HOME/Nobara_FF_UI/modules/alliance/alliance_a_discord/waybar_output.py",
+    "interval": 2,
+    "tooltip": "Alliance A - Discord"
   },
 
-  "custom/job": {
-    "exec": "python3 ~/Nobara_FF_UI/scripts/job_icon.py",
-    "interval": 2
+  "custom/alliance_b": {
+    "exec": "python3 $HOME/Nobara_FF_UI/modules/alliance/alliance_b_system/waybar_output.py",
+    "interval": 2,
+    "tooltip": "Alliance B - System"
   },
 
-  "custom/alliance": {
-    "exec": "python3 ~/Nobara_FF_UI/modules/alliance/alliance_status.py",
-    "interval": 5
+  "custom/alliance_c": {
+    "exec": "python3 $HOME/Nobara_FF_UI/modules/alliance/alliance_c_apps/waybar_output.py",
+    "interval": 3,
+    "tooltip": "Alliance C - Apps"
   },
 
   "clock": {
-    "format": "{:%H:%M  %d.%m.%Y}"
-  },
-
-  "cpu": {
-    "format": "CPU {usage}%"
-  },
-
-  "memory": {
-    "format": "RAM {}%"
-  },
-
-  "temperature": {
-    "format": "{temperatureC}°C"
+    "format": "ET {:%I:%M %p}"
   }
 }

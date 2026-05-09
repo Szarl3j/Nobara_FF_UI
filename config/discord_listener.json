@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+
+  "keywords": [
+    "discord",
+    "vesktop",
+    "webcord",
+    "discord.com"
+  ],
+
+  "ignored_titles": [
+    "Discord",
+    "Vesktop",
+    "WebCord",
+    "Google Chrome",
+    "Firefox",
+    "Chromium",
+    "Brave"
+  ],
+
+  "max_contacts": 50,
+  "display_limit": 8,
+
+  "glow_on_message": true,
+  "play_sound_on_message": true,
+  "message_sound": "ffxiv-message-2",
+
+  "clear_glow_after_seconds": 60
+}

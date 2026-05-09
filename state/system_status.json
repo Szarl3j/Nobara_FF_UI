@@ -1,0 +1,27 @@
+{
+  "cpu": 4.8,
+  "ram": {
+    "percent": 54.3,
+    "used_gb": 8.6,
+    "total_gb": 15.8
+  },
+  "swap": {
+    "percent": 0.0
+  },
+  "disk": {
+    "percent": 60.2,
+    "free_gb": 388.6
+  },
+  "network": {
+    "sent_mb": 1.3,
+    "recv_mb": 3.6
+  },
+  "gpu": {
+    "usage_percent": 0,
+    "vram_used_mb": 0,
+    "vram_total_mb": 6144,
+    "temperature": 39
+  },
+  "load": 0.0,
+  "platform": "Windows"
+}

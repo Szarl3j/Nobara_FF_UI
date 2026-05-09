@@ -1,14 +1,16 @@
 #!/bin/bash
 
-# kill duplicates
+PROJECT_DIR="$HOME/Nobara_FF_UI"
+
 pkill waybar 2>/dev/null
 pkill mpvpaper 2>/dev/null
+pkill -f notification_listener.py 2>/dev/null
 
-# start wallpaper
-wallpaper &
+export PATH="$PROJECT_DIR/bin:$PATH"
 
-# start UI sound
-play-sound startup &
+"$PROJECT_DIR/bin/wallpaper" &
+"$PROJECT_DIR/bin/play-sound" "Duty Pop" &
 
-# start waybar
-waybar &
+python3 "$PROJECT_DIR/modules/alliance/alliance_a_discord/notification_listener.py" &
+
+waybar -c "$PROJECT_DIR/waybar/config.jsonc" -s "$PROJECT_DIR/waybar/style.css" &
