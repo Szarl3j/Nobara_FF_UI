@@ -1,0 +1,12 @@
+{
+  "bottom_bar": {
+    "height": 130,
+    "start_button_size": 110,
+    "skill_button_size": 64,
+    "skill_icon_size": 36,
+    "skill_columns": 6,
+    "clock_width": 120,
+    "font_size": 14,
+    "spacing": 14
+  }
+}

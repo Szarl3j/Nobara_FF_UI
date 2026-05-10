@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future" />
+    <list default="true" id="0931aca9-02b6-445e-b92d-6a73a7f2d855" name="Changes" comment="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future">
+      <change afterPath="$PROJECT_DIR$/config/hud_layout.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/quest_log.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/hud_bottom_bar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/widgets/draggable_panel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/widgets/game_clock.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/widgets/status_tray.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/paths.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/paths.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state/apps_status.json" beforeDir="false" afterPath="$PROJECT_DIR$/state/apps_status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state/system_status.json" beforeDir="false" afterPath="$PROJECT_DIR$/state/system_status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/state/ui_state.json" beforeDir="false" afterPath="$PROJECT_DIR$/state/ui_state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/launcher/skillbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/launcher/skillbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/launcher/start_menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/launcher/start_menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/main_hud.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/main_hud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets/clock_widget.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets/gil_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/gil_disk_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/widgets/limit_break.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/widgets/limit_break.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +37,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -243,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778331819499</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="another structure  changes&#10;new folders&#10;new classes&#10;same of files has changed names&#10;some of files is dealeted ebcause has no use anymore.&#10;Rest of files will be changed or removed in the future">
+      <option name="closed" value="true" />
+      <created>1778331983117</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778331983117</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -1,26 +1,26 @@
 {
-  "cpu": 4.8,
+  "cpu": 12.9,
   "ram": {
-    "percent": 54.3,
-    "used_gb": 8.6,
+    "percent": 89.2,
+    "used_gb": 14.1,
     "total_gb": 15.8
   },
   "swap": {
-    "percent": 0.0
+    "percent": 15.6
   },
   "disk": {
-    "percent": 60.2,
-    "free_gb": 388.6
+    "percent": 60.8,
+    "free_gb": 382.7
   },
   "network": {
-    "sent_mb": 1.3,
-    "recv_mb": 3.6
+    "sent_mb": 161.3,
+    "recv_mb": 1584.1
   },
   "gpu": {
-    "usage_percent": 0,
-    "vram_used_mb": 0,
+    "usage_percent": 31,
+    "vram_used_mb": 2506,
     "vram_total_mb": 6144,
-    "temperature": 39
+    "temperature": 58
   },
   "load": 0.0,
   "platform": "Windows"

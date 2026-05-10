@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "name": "School",
+      "icon": "WhiteMage.png",
+      "tasks": [
+        {
+          "text": "Prepare INF.03 materials",
+          "done": false
+        }
+      ]
+    },
+
+    {
+      "name": "Work",
+      "icon": "DarkKnight.png",
+      "tasks": [
+        {
+          "text": "Prepare UI architecture",
+          "done": false
+        }
+      ]
+    },
+
+    {
+      "name": "FFXIV",
+      "icon": "TankRole.png",
+      "tasks": [
+        {
+          "text": "Finish Warrior quests",
+          "done": false
+        }
+      ]
+    },
+
+    {
+      "name": "System",
+      "icon": "Machinist.png",
+      "tasks": [
+        {
+          "text": "Configure Hyprland",
+          "done": false
+        }
+      ]
+    },
+
+    {
+      "name": "Completed",
+      "icon": "Done.png",
+      "tasks": []
+    }
+  ]
+}

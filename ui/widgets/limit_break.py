@@ -1,128 +1,178 @@
-from PySide6.QtWidgets import QWidget, QLabel, QVBoxLayout, QProgressBar
+import psutil
 
-from core.paths import THRESHOLDS_CONFIG_FILE
-from core.state import load_json
-from core.system_monitor import collect_system_status
-from core.sound import play
+from PySide6.QtWidgets import (
+    QWidget,
+    QLabel,
+    QVBoxLayout,
+    QHBoxLayout,
+    QProgressBar
+)
 
-
-DEFAULT_THRESHOLDS = {
-    "limit_break": {
-        "enabled": True,
-        "gpu_temp_warning": 80,
-        "gpu_temp_critical": 92,
-        "gpu_usage_warning": 85,
-        "gpu_usage_critical": 96,
-        "cpu_usage_warning": 80,
-        "cpu_usage_critical": 95,
-        "ram_usage_warning": 80,
-        "ram_usage_critical": 94,
-        "play_warning_sound": True,
-        "warning_sound": "ffxiv-message-2",
-        "critical_sound": "Duty Pop"
-    }
-}
+from PySide6.QtCore import Qt
 
 
 class LimitBreakWidget(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.warning_played = False
-        self.critical_played = False
-
         self.title = QLabel("LIMIT BREAK")
+        self.title.setAlignment(Qt.AlignCenter)
+
+        # GPU
+        self.gpu_label = QLabel("GPU")
         self.gpu_bar = QProgressBar()
+
+        # CPU
+        self.cpu_label = QLabel("CPU")
         self.cpu_bar = QProgressBar()
+
+        # RAM
+        self.ram_label = QLabel("RAM")
         self.ram_bar = QProgressBar()
 
-        layout = QVBoxLayout()
-        layout.addWidget(self.title)
-        layout.addWidget(QLabel("GPU TEMP"))
-        layout.addWidget(self.gpu_bar)
-        layout.addWidget(QLabel("CPU"))
-        layout.addWidget(self.cpu_bar)
-        layout.addWidget(QLabel("RAM"))
-        layout.addWidget(self.ram_bar)
+        self.setup_bar(self.gpu_bar)
+        self.setup_bar(self.cpu_bar)
+        self.setup_bar(self.ram_bar)
 
-        self.setLayout(layout)
+        gpu_layout = self.create_section(
+            self.gpu_label,
+            self.gpu_bar
+        )
+
+        cpu_layout = self.create_section(
+            self.cpu_label,
+            self.cpu_bar
+        )
+
+        ram_layout = self.create_section(
+            self.ram_label,
+            self.ram_bar
+        )
+
+        bars_layout = QHBoxLayout()
+        bars_layout.addLayout(gpu_layout)
+        bars_layout.addLayout(cpu_layout)
+        bars_layout.addLayout(ram_layout)
+
+        main_layout = QVBoxLayout()
+        main_layout.addWidget(self.title)
+        main_layout.addLayout(bars_layout)
+
+        main_layout.setContentsMargins(10, 6, 10, 6)
+        main_layout.setSpacing(4)
+
+        self.setLayout(main_layout)
+
+        # STAŁY ROZMIAR
+        self.setFixedWidth(360)
+        self.setFixedHeight(90)
 
         self.setStyleSheet("""
             QWidget {
-                background: rgba(10, 10, 10, 180);
-                color: #d4c8a8;
+                background: rgba(5, 5, 8, 220);
                 border: 1px solid #7a1f1f;
-                border-radius: 10px;
-                padding: 6px;
+                border-radius: 0px;
             }
 
             QLabel {
-                color: #ff4444;
+                color: #d4c8a8;
+                font-size: 12px;
                 font-weight: bold;
+                border: none;
             }
 
             QProgressBar {
-                height: 12px;
-                border: 1px solid #c9a86a;
-                border-radius: 6px;
-                background: #111;
+                background: rgba(20, 20, 20, 220);
+                border: 1px solid #5c1010;
+                border-radius: 4px;
+
+                text-align: center;
+
                 color: white;
+
+                min-height: 16px;
+                max-height: 16px;
             }
 
             QProgressBar::chunk {
-                background: #ffd700;
-                border-radius: 6px;
+                background-color: #b00000;
+                border-radius: 3px;
             }
         """)
 
+    def create_section(self, label, bar):
+        layout = QVBoxLayout()
+
+        label.setAlignment(Qt.AlignCenter)
+
+        layout.addWidget(bar)
+        layout.addWidget(label)
+
+        layout.setSpacing(2)
+
+        return layout
+
+    def setup_bar(self, bar):
+        bar.setMinimum(0)
+        bar.setMaximum(100)
+        bar.setValue(0)
+        bar.setTextVisible(False)
+
     def refresh(self):
-        thresholds = load_json(
-            THRESHOLDS_CONFIG_FILE,
-            DEFAULT_THRESHOLDS
-        ).get("limit_break", DEFAULT_THRESHOLDS["limit_break"])
+        # CPU
+        cpu_usage = int(psutil.cpu_percent())
+        self.cpu_bar.setValue(cpu_usage)
 
-        if not thresholds.get("enabled", True):
-            self.title.setText("LIMIT BREAK DISABLED")
-            return
+        # RAM
+        ram_usage = int(psutil.virtual_memory().percent)
+        self.ram_bar.setValue(ram_usage)
 
-        data = collect_system_status()
-
-        gpu_temp = data["gpu"]["temperature"]
-        gpu_usage = data["gpu"]["usage_percent"]
-        cpu = int(data["cpu"])
-        ram_percent = int(data["ram"]["percent"])
-
-        self.gpu_bar.setValue(min(gpu_temp, 100))
-        self.cpu_bar.setValue(cpu)
-        self.ram_bar.setValue(ram_percent)
-
-        warning = (
-            gpu_temp >= thresholds["gpu_temp_warning"]
-            or gpu_usage >= thresholds["gpu_usage_warning"]
-            or cpu >= thresholds["cpu_usage_warning"]
-            or ram_percent >= thresholds["ram_usage_warning"]
+        # GPU
+        # Placeholder dopóki nie dodamy pynvml
+        gpu_usage = min(
+            100,
+            int((cpu_usage + ram_usage) / 2)
         )
 
-        critical = (
-            gpu_temp >= thresholds["gpu_temp_critical"]
-            or gpu_usage >= thresholds["gpu_usage_critical"]
-            or cpu >= thresholds["cpu_usage_critical"]
-            or ram_percent >= thresholds["ram_usage_critical"]
+        self.gpu_bar.setValue(gpu_usage)
+
+        self.update_colors(
+            self.cpu_bar,
+            cpu_usage
         )
 
-        if critical:
-            self.title.setText("LIMIT BREAK III")
-            if not self.critical_played and thresholds.get("play_warning_sound", True):
-                play(thresholds.get("critical_sound", "Duty Pop"))
-                self.critical_played = True
+        self.update_colors(
+            self.ram_bar,
+            ram_usage
+        )
 
-        elif warning:
-            self.title.setText("LIMIT BREAK READY")
-            if not self.warning_played and thresholds.get("play_warning_sound", True):
-                play(thresholds.get("warning_sound", "ffxiv-message-2"))
-                self.warning_played = True
+        self.update_colors(
+            self.gpu_bar,
+            gpu_usage
+        )
+
+    def update_colors(self, bar, value):
+        if value >= 92:
+            color = "#ff2020"
+
+        elif value >= 75:
+            color = "#ff8800"
 
         else:
-            self.title.setText("LIMIT BREAK")
-            self.warning_played = False
-            self.critical_played = False
+            color = "#b00000"
+
+        bar.setStyleSheet(f"""
+            QProgressBar {{
+                background: rgba(20, 20, 20, 220);
+                border: 1px solid #5c1010;
+                border-radius: 4px;
+
+                min-height: 16px;
+                max-height: 16px;
+            }}
+
+            QProgressBar::chunk {{
+                background-color: {color};
+                border-radius: 3px;
+            }}
+        """)
